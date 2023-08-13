@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Unica One';
+    src: url('UnicaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url('MartianMono-Regular.ttf');
+}
+
+:root {
+    --primary-color: #D2B7E5;
+    --secondary-color: #DEC9E9;
+
+    --text-color: #000000;
+    --text-color-secondary: #6247AA; /*on light backgrounds*/
+    --text-color-button: #C19EE0; /*on dark backgrounds*/
+}
+
+html {
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+    color: var(--text-color-secondary);
+}
+
+ul {
+    font-family: 'Martian Mono', monospace;
+    margin: 0;
+    line-height: 1.2;
+}
+p {
+    font-family: 'Martian Mono', monospace;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.button {
+    font-family: 'Martian Mono', monospace;
+    background-color: var(--text-color);
+    color: var(--text-color-button);
+    padding: .4em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-align: center;
+}
+.button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button:active {
+    transform: scale(.9);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    background-color: var(--primary-color);
+    padding: 2em;
+    text-align: center;
+}
+.hero img {
+    width: 250px;
+    height: 200px;
+}
+
+.welcome {
+    padding: 2em;
+    display: flex;
+}
+.welcome > * {
+    flex: 1;
+}
+.welcome h2 {
+    color: var(--text-color-secondary);
+}
+
+.showcase {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.app .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app .header .appname {
+    display: flex;
+    gap: 5px
+}
+
+.app .header img {
+    width: 32px;
+    height: 32px;
+}
+
+.privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}

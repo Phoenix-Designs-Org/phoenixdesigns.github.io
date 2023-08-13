@@ -2,80 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phoenix Designs - Indie Game Design Studio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 1rem;
-    }
-
-    .game-card {
-      max-width: 300px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin: 1rem;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .game-card img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .game-title {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-    }
-
-    .game-description {
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Designs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
 </head>
 
 <body>
-  <header>
-    <h1>Phoenix Designs</h1>
-    <p>Indie Game Design Studio</p>
-  </header>
-  <main>
-    <div class="game-card">
-      <img src="sudoku.jpeg" alt="Sudoku">
-      <div class="game-title">Sudoku</div>
-      <div class="game-description">
-        Enjoy the classic puzzle game Sudoku! Test your logic and critical thinking skills with various difficulty levels.
-      </div>
-    </div>
+    <main>
+        <div class="hero">
+            <img src="logo.png" alt="Phoenix Designs logo" />
+            <h1>Phoenix Designs</h1>
+            <div class="button"><a href="#showcase">Explore Games</a></div>
+        </div>
+        <div class="welcome">
+            <h2>Welcome to Phoenix Designs</h2>
+            <p>We’re a indie mobile game design studio set out to make mindblowing games and an experience forged for magical fun</p>
+        </div>
+        <div id="showcase" class="showcase">
+            <h2>Our Sizzling Hits</h2>
+            <div class="app">
+                <div class="header">
+                    <div class="appname">
+                        <img src="sudoku-logo.png" alt="sudoku logo"/>
+                        <h2>Sudoku</h2>
+                    </div>
+                    <div class="downloadlikns">
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.funskool"><img src="playstore.svg" alt="google playstore link" /></a>
+                        <img src = "sudoku-qrcode.png" alt="sudoku qrcode image"/>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Unravel hundreds of brain-teasing puzzles across various difficulty levels, from easy to extreme. Whether you're a beginner looking to improve your skills or an experienced Sudoku enthusiast seeking a thrilling challenge, Sudoku Mastermind caters to all skill levels.</p>
+                </div>
+            </div>
+            <div class="app">
+                <div class="header">
+                    <div class="appname">
+                        <img src="monstersweep-logo.png" alt="monstersweep logo"/>
+                        <h2>Monstersweep</h2>
+                    </div>
+                    <div class="downloadlikns">
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.phoenixdesign.monstersweep"><img src="playstore.svg" alt="google playstore link" /></a>
+                        <img src = "monstersweep-qrcode.png" alt="monstersweep qrcode image"/>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Unleash your inner adventurer with our captivating mobile game that puts a spellbinding twist on the classic Minesweeper! Step into a whimsical world filled with mystery and magic, where cute and mischievous monsters lurk beneath the surface. Navigate through the enchanted fields, strategically avoiding the mischievous ones that may thwart your progress!</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="game-card">
-      <img src="monstersweeper.jpeg" alt="Monstersweeper">
-      <div class="game-title">Monstersweeper</div>
-      <div class="game-description">
-        Monstersweeper combines the challenge of Minesweeper with quirky monsters! Clear the board without getting caught by
-        mischievous creatures.
-      </div>
+        <div class="footer">
+            
+        </div>
     </div>
-  </main>
+    </main>
+
 </body>
 
 </html>
