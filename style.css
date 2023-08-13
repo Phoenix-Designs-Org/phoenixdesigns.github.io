@@ -19,7 +19,7 @@
 
 html {
     font-family: 'Unica One', cursive;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1;
     color: var(--text-color);
 }
@@ -31,12 +31,12 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     color: var(--text-color-secondary);
 }
@@ -121,7 +121,8 @@ p {
 
 .app .header .appname {
     display: flex;
-    gap: 5px
+    gap: 5px;
+    align-items: center;
 }
 
 .app .header img {
